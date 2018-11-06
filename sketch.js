@@ -12,13 +12,13 @@ function draw() {
 
 	bird.show();
 	bird.update();
-	bird.jumping();
 	bird.edges();
-	bird.hitPipe(pipe);
+	bird.jumping();
+	// bird.hitPipe(pipe);
 
-	pipe.show();
-	pipe.update();
-	pipe.edge();
+	// pipe.show();
+	// pipe.update();
+	// pipe.edge();
 }
 
 function keyPressed() {

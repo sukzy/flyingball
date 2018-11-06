@@ -32,7 +32,11 @@ class Bird {
 
   edges() {
     if (this.y + this.r > height) {
-      this.y = height - this.r / 2;
+      if (!this.jump) {
+        this.y = height - this.r / 2;
+      } else {
+        this.y = height - this.r;
+      }
     }
   }
 
